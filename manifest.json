@@ -1,0 +1,10 @@
+{
+  "id": "archive-viewer",
+  "name": "Archive Viewer",
+  "version": "0.1.0",
+  "minAppVersion": "1.5.0",
+  "description": "Inspect .zip archive contents as read-only metadata trees with search and safety warnings.",
+  "author": "Viggo Meesters",
+  "authorUrl": "https://github.com/viggomeesters",
+  "isDesktopOnly": false
+}
