@@ -1,6 +1,19 @@
+<p align="center">
+  <img src="assets/hero.svg" alt="Archive Viewer" width="100%">
+</p>
+
+<p align="center">
+  <a href="https://github.com/viggomeesters/obsidian-archive-viewer/releases/latest"><img alt="Latest release" src="https://img.shields.io/github/v/release/viggomeesters/obsidian-archive-viewer?style=flat-square"></a>
+  <a href="LICENSE"><img alt="MIT license" src="https://img.shields.io/badge/license-MIT-green?style=flat-square"></a>
+  <img alt="Minimum app version 1.5.0+" src="https://img.shields.io/badge/minimum-1.5.0%2B-7c3aed?style=flat-square">
+  <img alt="Read-only" src="https://img.shields.io/badge/mode-read--only-0f766e?style=flat-square">
+</p>
+
 # Archive Viewer
 
 Archive Viewer is a read-only plugin for inspecting `.zip` archive contents inside a vault. It shows the ZIP central-directory metadata as a contents tree and table without extracting files.
+
+![Archive Viewer preview](assets/screenshot.svg)
 
 ## Features
 
@@ -24,6 +37,18 @@ This is an archive inspector, not an archiver, extractor, restore tool, backup t
 Archive Viewer reads only ZIP central-directory metadata through the vault binary API. It does not decompress entry contents and does not expose an extraction path in the UI.
 
 The plugin does not use runtime network APIs, clipboard APIs, subprocess APIs, dynamic code evaluation, or archive write-back behavior.
+
+## Community plugin compliance
+
+The repository is prepared for Obsidian Community plugin review:
+
+- `manifest.json.id` is `archive-viewer`, contains only lowercase letters and hyphens, does not contain `obsidian`, and does not end with `plugin`.
+- `manifest.json.name` is short, English, Basic Latin, and does not include `Obsidian`.
+- `manifest.json.version` is `0.1.0` in `x.y.z` format.
+- `versions.json` maps `0.1.0` to the minimum app version.
+- Release assets are `main.js`, `manifest.json`, and `styles.css`.
+- Runtime plugin code avoids Node.js, Electron, network, clipboard, subprocess, and dynamic evaluation APIs.
+- The release workflow can attest the release assets with GitHub artifact attestations.
 
 ## Parser dependency decision
 
@@ -81,6 +106,34 @@ The fixture set covers simple ZIPs, nested folders, path traversal entries, many
 2. Run `npm install`, `npm run build`, `npx tsc --noEmit`, and `npm test`.
 3. Create a GitHub release whose tag exactly matches `manifest.json.version`.
 4. Attach `main.js`, `manifest.json`, and `styles.css` as release assets.
+
+## Community directory submission
+
+The repository is ready for Obsidian Community plugin submission once the GitHub release exists.
+
+Submit this repository path in the `obsidianmd/obsidian-releases` PR:
+
+```text
+viggomeesters/obsidian-archive-viewer
+```
+
+Suggested `community-plugins.json` entry:
+
+```json
+{
+  "id": "archive-viewer",
+  "name": "Archive Viewer",
+  "author": "Viggo Meesters",
+  "description": "Inspect .zip archive contents as read-only metadata trees with search, size summaries, and safety warnings.",
+  "repo": "viggomeesters/obsidian-archive-viewer"
+}
+```
+
+Official references:
+
+- [Submit your plugin](https://docs.obsidian.md/Plugins/Releasing/Submit%20your%20plugin)
+- [Manifest](https://docs.obsidian.md/Reference/Manifest)
+- [Versions](https://docs.obsidian.md/Reference/Versions)
 
 ## License
 

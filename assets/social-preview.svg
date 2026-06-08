@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Archive Viewer social preview</title>
+  <desc id="desc">Read-only ZIP metadata inspection with safety warnings.</desc>
+  <rect width="1200" height="630" fill="#151719"/>
+  <rect x="68" y="70" width="1064" height="490" rx="24" fill="#20242b" stroke="#3a404b"/>
+  <text x="112" y="158" fill="#f8fafc" font-family="Inter, Arial, sans-serif" font-size="58" font-weight="800">Archive Viewer</text>
+  <text x="116" y="208" fill="#a8adb8" font-family="Inter, Arial, sans-serif" font-size="25">Inspect ZIP contents without extraction</text>
+  <g transform="translate(116 266)">
+    <rect width="968" height="224" rx="14" fill="#111827" stroke="#3a404b"/>
+    <rect width="968" height="48" rx="14" fill="#29313f"/>
+    <g fill="#d7dce8" font-family="Menlo, Consolas, monospace" font-size="19" font-weight="700">
+      <text x="28" y="31">path</text><text x="408" y="31">size</text><text x="570" y="31">ratio</text><text x="740" y="31">warning</text>
+    </g>
+    <g fill="#e5e7eb" font-family="Menlo, Consolas, monospace" font-size="19">
+      <text x="28" y="88">notes/daily.md</text><text x="408" y="88">14 KB</text><text x="570" y="88">3.5:1</text><text x="740" y="88">none</text>
+      <text x="28" y="136">exports/table.csv</text><text x="408" y="136">31 KB</text><text x="570" y="136">5.1:1</text><text x="740" y="136">none</text>
+      <text x="28" y="184" fill="#fca5a5">../escape.txt</text><text x="408" y="184" fill="#fca5a5">4 B</text><text x="570" y="184" fill="#fca5a5">1.0:1</text><text x="740" y="184" fill="#fca5a5">path</text>
+    </g>
+    <g stroke="#29313f">
+      <line x1="0" y1="48" x2="968" y2="48"/>
+      <line x1="0" y1="104" x2="968" y2="104"/>
+      <line x1="0" y1="152" x2="968" y2="152"/>
+      <line x1="380" y1="0" x2="380" y2="224"/>
+      <line x1="542" y1="0" x2="542" y2="224"/>
+      <line x1="712" y1="0" x2="712" y2="224"/>
+    </g>
+  </g>
+</svg>

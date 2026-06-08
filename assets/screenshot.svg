@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="820" viewBox="0 0 1280 820" role="img" aria-labelledby="title desc">
+  <title id="title">Archive Viewer screenshot</title>
+  <desc id="desc">A dark themed ZIP archive viewer with summary pills, warnings, a contents tree, and entry metadata table.</desc>
+  <rect width="1280" height="820" fill="#1f2329"/>
+  <rect x="58" y="58" width="1164" height="704" rx="14" fill="#20242b" stroke="#3a404b"/>
+  <text x="92" y="112" fill="#f4f4f5" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="750">research-bundle.zip</text>
+  <text x="92" y="142" fill="#a8adb8" font-family="Menlo, Consolas, monospace" font-size="15">20_files/2026-06/research-bundle.zip</text>
+  <rect x="844" y="86" width="216" height="38" rx="8" fill="#171a20" stroke="#3a404b"/>
+  <text x="880" y="111" fill="#a8adb8" font-family="Inter, Arial, sans-serif" font-size="17">Filter path or .ext</text>
+  <rect x="1080" y="86" width="44" height="38" rx="8" fill="#2d333d" stroke="#4a5260"/>
+  <text x="1095" y="111" fill="#f8fafc" font-family="Inter, Arial, sans-serif" font-size="18">↻</text>
+  <line x1="92" y1="164" x2="1188" y2="164" stroke="#3a404b"/>
+  <g font-family="Inter, Arial, sans-serif" font-size="15">
+    <rect x="92" y="190" width="112" height="30" rx="15" fill="#17251e" stroke="#28684a"/>
+    <text x="112" y="210" fill="#62d88f" font-weight="700">Inspect only</text>
+    <text x="218" y="210" fill="#a8adb8">Contained files are not opened or extracted.</text>
+  </g>
+  <g font-family="Menlo, Consolas, monospace" font-size="15">
+    <rect x="92" y="244" width="86" height="28" rx="14" fill="#252a32" stroke="#464c58"/>
+    <text x="111" y="263" fill="#e5e7eb">128 items</text>
+    <rect x="188" y="244" width="80" height="28" rx="14" fill="#252a32" stroke="#464c58"/>
+    <text x="207" y="263" fill="#e5e7eb">96 files</text>
+    <rect x="278" y="244" width="158" height="28" rx="14" fill="#252a32" stroke="#464c58"/>
+    <text x="297" y="263" fill="#e5e7eb">42.3 MB unpacked</text>
+    <rect x="446" y="244" width="102" height="28" rx="14" fill="#252a32" stroke="#464c58"/>
+    <text x="465" y="263" fill="#e5e7eb">129.4:1</text>
+    <text x="566" y="263" fill="#fbbf24">3 suspicious entries</text>
+  </g>
+  <g transform="translate(92 296)">
+    <rect width="1096" height="72" rx="8" fill="#2a2519" stroke="#f59e0b"/>
+    <text x="18" y="28" fill="#fbbf24" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="700">Archive warnings</text>
+    <text x="18" y="54" fill="#d6d3d1" font-family="Menlo, Consolas, monospace" font-size="14">../escape.txt: Path traversal segment detected.    huge.bin: Suspicious compression ratio: 256000.0:1.</text>
+  </g>
+  <g transform="translate(92 392)">
+    <rect width="348" height="324" rx="8" fill="#171a20" stroke="#3a404b"/>
+    <rect width="348" height="42" rx="8" fill="#262b34"/>
+    <text x="18" y="27" fill="#d8dee9" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="700">Contents tree</text>
+    <g fill="#f0c674" font-family="Menlo, Consolas, monospace" font-size="16">
+      <text x="18" y="80">▾ research-bundle.zip</text>
+      <text x="40" y="118">▾ notes</text>
+      <text x="66" y="156">daily.md</text>
+      <text x="66" y="194">sources.json</text>
+      <text x="40" y="232">▾ exports</text>
+      <text x="66" y="270">table.csv</text>
+      <text x="40" y="308">⚠ ../escape.txt</text>
+    </g>
+  </g>
+  <g transform="translate(462 392)">
+    <rect width="726" height="324" rx="8" fill="#171a20" stroke="#3a404b"/>
+    <rect width="726" height="42" rx="8" fill="#262b34"/>
+    <g fill="#d8dee9" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="700">
+      <text x="16" y="27">Path</text><text x="280" y="27">Type</text><text x="374" y="27">Size</text><text x="488" y="27">Compressed</text><text x="622" y="27">Warnings</text>
+    </g>
+    <g fill="#e5e7eb" font-family="Menlo, Consolas, monospace" font-size="14">
+      <text x="16" y="82">notes/daily.md</text><text x="280" y="82">file</text><text x="374" y="82">14 KB</text><text x="488" y="82">4 KB</text><text x="622" y="82">none</text>
+      <text x="16" y="124">notes/sources.json</text><text x="280" y="124">file</text><text x="374" y="124">8 KB</text><text x="488" y="124">2 KB</text><text x="622" y="124">none</text>
+      <text x="16" y="166">exports/table.csv</text><text x="280" y="166">file</text><text x="374" y="166">31 KB</text><text x="488" y="166">6 KB</text><text x="622" y="166">none</text>
+      <text x="16" y="208" fill="#fca5a5">../escape.txt</text><text x="280" y="208" fill="#fca5a5">file</text><text x="374" y="208" fill="#fca5a5">4 B</text><text x="488" y="208" fill="#fca5a5">4 B</text><text x="622" y="208" fill="#fca5a5">path</text>
+    </g>
+    <g stroke="#303641">
+      <line x1="0" y1="42" x2="726" y2="42"/>
+      <line x1="0" y1="96" x2="726" y2="96"/>
+      <line x1="0" y1="138" x2="726" y2="138"/>
+      <line x1="0" y1="180" x2="726" y2="180"/>
+      <line x1="260" y1="0" x2="260" y2="324"/>
+      <line x1="354" y1="0" x2="354" y2="324"/>
+      <line x1="468" y1="0" x2="468" y2="324"/>
+      <line x1="604" y1="0" x2="604" y2="324"/>
+    </g>
+  </g>
+</svg>

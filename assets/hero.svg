@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="420" viewBox="0 0 1400 420" role="img" aria-labelledby="title desc">
+  <title id="title">Archive Viewer</title>
+  <desc id="desc">A dark app-style hero showing a read-only ZIP archive metadata tree.</desc>
+  <rect width="1400" height="420" fill="#151719"/>
+  <rect x="48" y="48" width="1304" height="324" rx="18" fill="#20242a" stroke="#3b424c"/>
+  <rect x="48" y="48" width="1304" height="52" rx="18" fill="#2a2f36"/>
+  <circle cx="82" cy="74" r="8" fill="#ff5f57"/>
+  <circle cx="108" cy="74" r="8" fill="#ffbd2e"/>
+  <circle cx="134" cy="74" r="8" fill="#28c840"/>
+  <text x="80" y="162" fill="#f5f5f5" font-family="Inter, Arial, sans-serif" font-size="50" font-weight="760">Archive Viewer</text>
+  <text x="82" y="205" fill="#a9b0bb" font-family="Inter, Arial, sans-serif" font-size="20">Inspect ZIP contents safely without extraction</text>
+  <g transform="translate(82 248)">
+    <rect width="90" height="34" rx="8" fill="#17251e" stroke="#28684a"/>
+    <text x="23" y="23" fill="#62d88f" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="700">ZIP</text>
+    <rect x="102" width="136" height="34" rx="8" fill="#334155"/>
+    <text x="124" y="23" fill="#f8fafc" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="700">Read-only</text>
+    <rect x="250" width="128" height="34" rx="8" fill="#27272a" stroke="#45454c"/>
+    <text x="273" y="23" fill="#d4d4d8" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="700">Warnings</text>
+  </g>
+  <g transform="translate(646 110)">
+    <rect width="650" height="246" rx="12" fill="#111827" stroke="#3b424c"/>
+    <rect x="24" y="22" width="278" height="200" rx="8" fill="#171b22" stroke="#303743"/>
+    <rect x="324" y="22" width="302" height="200" rx="8" fill="#171b22" stroke="#303743"/>
+    <text x="44" y="52" fill="#d8dee9" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="700">Contents tree</text>
+    <text x="344" y="52" fill="#d8dee9" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="700">Archive summary</text>
+    <g fill="#f0c674" font-family="Menlo, Consolas, monospace" font-size="15">
+      <text x="48" y="90">▾ backup.zip</text>
+      <text x="70" y="122">▾ notes</text>
+      <text x="96" y="154">daily.md</text>
+      <text x="96" y="186">tasks.json</text>
+      <text x="70" y="218">⚠ ../escape.txt</text>
+    </g>
+    <g font-family="Menlo, Consolas, monospace" font-size="15">
+      <text x="348" y="92" fill="#e5e7eb">items</text><text x="520" y="92" fill="#7dd3fc">128</text>
+      <text x="348" y="126" fill="#e5e7eb">uncompressed</text><text x="520" y="126" fill="#7dd3fc">42.3 MB</text>
+      <text x="348" y="160" fill="#e5e7eb">ratio</text><text x="520" y="160" fill="#fca5a5">129.4:1</text>
+      <text x="348" y="194" fill="#e5e7eb">warnings</text><text x="520" y="194" fill="#fbbf24">3</text>
+    </g>
+  </g>
+</svg>
