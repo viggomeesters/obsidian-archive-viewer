@@ -1,5 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
+import { fileURLToPath } from "node:url";
 
 const fixtureDir = new URL("../fixtures/", import.meta.url);
 fs.mkdirSync(fixtureDir, { recursive: true });
@@ -32,7 +33,7 @@ createZip("large-metadata.zip", [
   entry("huge.bin", "", { compressedSize: 1024, uncompressedSize: 250 * 1024 * 1024 }),
 ]);
 
-fs.writeFileSync(path.join(fixtureDir.pathname, "malformed.zip"), Buffer.from("not a zip archive"));
+fs.writeFileSync(path.join(fileURLToPath(fixtureDir), "malformed.zip"), Buffer.from("not a zip archive"));
 
 function createZip(filename, entries) {
   const localParts = [];
@@ -98,7 +99,7 @@ function createZip(filename, entries) {
   eocd.writeUInt32LE(centralOffset, 16);
   eocd.writeUInt16LE(0, 20);
 
-  fs.writeFileSync(path.join(fixtureDir.pathname, filename), Buffer.concat([...localParts, centralDirectory, eocd]));
+  fs.writeFileSync(path.join(fileURLToPath(fixtureDir), filename), Buffer.concat([...localParts, centralDirectory, eocd]));
 }
 
 function entry(name, content, options = {}) {
