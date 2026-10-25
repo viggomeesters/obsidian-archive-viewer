@@ -107,33 +107,9 @@ The fixture set covers simple ZIPs, nested folders, path traversal entries, many
 3. Create a GitHub release whose tag exactly matches `manifest.json.version`.
 4. Attach `main.js`, `manifest.json`, and `styles.css` as release assets.
 
-## Community directory submission
+## Community directory
 
-The repository is ready for Obsidian Community plugin submission once the GitHub release exists.
-
-Submit this repository path in the `obsidianmd/obsidian-releases` PR:
-
-```text
-viggomeesters/obsidian-archive-viewer
-```
-
-Suggested `community-plugins.json` entry:
-
-```json
-{
-  "id": "archive-viewer",
-  "name": "Archive Viewer",
-  "author": "Viggo Meesters",
-  "description": "Inspect .zip archive contents as read-only metadata trees with search, size summaries, and safety warnings.",
-  "repo": "viggomeesters/obsidian-archive-viewer"
-}
-```
-
-Official references:
-
-- [Submit your plugin](https://docs.obsidian.md/Plugins/Releasing/Submit%20your%20plugin)
-- [Manifest](https://docs.obsidian.md/Reference/Manifest)
-- [Versions](https://docs.obsidian.md/Reference/Versions)
+Archive Viewer is listed in the [Obsidian Community directory](https://community.obsidian.md/plugins/archive-viewer).
 
 ## License
 
